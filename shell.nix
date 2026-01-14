@@ -7,6 +7,11 @@ pkgs.mkShell {
     nodePackages.typescript
     nodePackages.typescript-language-server
 
+    treefmt
+    alejandra
+    nodePackages.prettier
+    nodePackages.eslint
+
     git
   ];
 
@@ -20,6 +25,7 @@ pkgs.mkShell {
     echo "  pnpm dev      - Start dev server"
     echo "  pnpm build    - Build for production"
     echo "  pnpm preview  - Preview production build"
+    echo "  treefmt       - Formatting"
     echo ""
   '';
 
